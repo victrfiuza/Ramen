@@ -27,13 +27,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
 }
 
 /* Logo */
 
 .logo img {
-    width: 50%;
+    width: 90%;
 }
 
 /* Menu */
@@ -51,7 +53,7 @@ nav {
     font-family: 'light';
     text-decoration: none;
     color: #333;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .menu a:hover {
@@ -82,7 +84,7 @@ nav {
     font-family: 'bold';
     text-transform: uppercase;
     font-size: 1.4rem;
-    padding: 1rem 0.5rem 0rem;
+    padding: 2rem 0rem 0rem;
 }
 
 /* RAMEN */
@@ -93,6 +95,7 @@ nav {
     height: 90px;
     text-transform: uppercase;
     text-align: center;
+    width: 100%;
 }
 
 /* ラーメン */
@@ -118,12 +121,11 @@ nav {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    width: 100%;
 }
 
 .main__img img {
-    width: 70%;
-    padding: 2%;
+    width: 75%;
+    padding: 6%;
 }
 
 /* ------------------------------------------------ */
@@ -170,5 +172,148 @@ nav {
     background-color: #ec3c20;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-@me
+/*                                                                                    
+ __  __ _____ ____ ___    _       ___  _   _ _____ ____  ___ _____ ____    _  ___ ____  _  _   
+|  \/  | ____|  _ |_ _|  / \     / _ \| | | | ____|  _ \|_ _| ____/ ___|  / |/ _ |___ \| || |  
+| |\/| |  _| | | | | |  / _ \   | | | | | | |  _| | |_) || ||  _| \___ \  | | | | |__) | || |_ 
+| |  | | |___| |_| | | / ___ \  | |_| | |_| | |___|  _ < | || |___ ___) | | | |_| / __/|__   _|
+|_|  |_|_____|____|___/_/   \_\  \__\_\\___/|_____|_| \_|___|_____|____/  |_|\___|_____|  |_|  
+                                                                                               
+ */
+
+@media (min-width: 1024px) {
+
+    .container {
+        flex-wrap: nowrap;
+        justify-content: left;
+        position: relative;
+    }
+
+    .content {
+        text-align: left;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /*Espaço na direita dos elementos da navbar*/
+    .menu {
+        padding-right: 1rem;
+    }
+
+    /*Espaço entre elementos da navbar*/
+    .menu a {
+        padding: 1rem;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    #first__title {
+
+        font-size: 3rem;
+        max-width: 38rem;
+        padding: 0;
+    }
+
+    #first__title span {
+        color: #ec3c20;
+    }
+
+    /* RAMEN OCULTAR */
+    #ramen__title {
+        display: none;
+
+    }
+
+
+    /* ラーメン */
+    #jp__title {
+        font-size: 3.9rem;
+        text-align: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-left: 2rem;
+        padding-top: 4rem;
+
+    }
+
+    /* Texto abaixo -> ラーメン */
+    #main__text {
+        font-size: 20px;
+        padding-bottom: 4rem;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    .main__img {
+        padding: 2rem;
+        align-items: center;
+    }
+
+    .main__img img {
+        width: 40vw;
+
+        padding-right: 3rem;
+    }
+
+
+    #btn__order {}
+
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    .social__media {
+        justify-content: left;
+        padding: 1.5rem;
+        background-color: transparent;
+    }
+
+    .social__media ul li a {
+        color: #ec3c20;
+        padding: 1.5rem;
+        background-color: transparent;
+    }
+}
+
+/*                                                                                                                                                                                              
+ __  __ _____ ____ ___    _       ___  _   _ _____ ____  ___ _____ ____    _  ___ ____   ___   __  __  _  ___   ___   ___  
+|  \/  | ____|  _ |_ _|  / \     / _ \| | | | ____|  _ \|_ _| ____/ ___|  / |/ _ |___ \ / _ \  \ \/ / / |/ _ \ ( _ ) / _ \ 
+| |\/| |  _| | | | | |  / _ \   | | | | | | |  _| | |_) || ||  _| \___ \  | | (_) |__) | | | |  \  /  | | | | |/ _ \| | | |
+| |  | | |___| |_| | | / ___ \  | |_| | |_| | |___|  _ < | || |___ ___) | | |\__, / __/| |_| |  /  \  | | |_| | (_) | |_| |
+|_|  |_|_____|____|___/_/   \_\  \__\_\\___/|_____|_| \_|___|_____|____/  |_|  /_|_____|\___/  /_/\_\ |_|\___/ \___/ \___/ 
+                                                                                                                            
+ */
+
+@media (min-width: 1920px) {
+    * {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        padding-right: 0;
+        padding-left: 3rem;
+    }
+
+
+    #jp__title {
+        font-size: 5rem;
+
+    }
+
+    #first__title {
+        font-size: 3.4rem;
+        max-width: 70rem;
+        padding: 0;
+    }
+
+    #first__title span {
+        padding: 0;
+    }
+
+    .main__img {
+        padding-left: 20rem;
+    }
+
+    .main__img img {
+        width: 30vw;
+    }
+}
