@@ -1,0 +1,140 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'bold';
+    src: url('/fonts/bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('/fonts/light.otf') format('opentype');
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+    background-color: #eadfcd;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Header-Nav */
+
+nav {
+    /* conferir */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Logo */
+
+.logo img {
+    width: 50%;
+}
+
+/* Menu */
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.menu a {
+    font-family: 'light';
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.menu a:hover {
+    color: #ec3c20;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.content {
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Main */
+
+/* A BOWL OF LOVE FROM JAPANESE CUISINE FOR YOU */
+#first__title {
+    font-family: 'bold';
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 1rem 0.5rem 0rem;
+}
+
+/* RAMEN */
+#ramen__title {
+    font-family: 'bold';
+    color: #ec3c20;
+    font-size: 5.2rem;
+    padding: 0.6rem;
+    height: 90px;
+}
+
+/* ラーメン */
+#jp__title {
+    color: #ec3c20;
+    font-size: 2.7rem;
+    text-align: right;
+    padding-right: 7.0%;
+}
+
+/* Texto abaixo -> ラーメン */
+#main__text {
+    text-align: justify;
+    font-family: 'light';
+    font-size: 1.2rem;
+    padding: 0.3rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Imagem */
+.main__img {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main__img img {
+    width: 70%;
+    padding: 2%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#btn__order {
+    font-family: 'light';
+    background-color: #ec3c20;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+
+}
